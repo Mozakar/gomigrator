@@ -9,8 +9,6 @@ import (
 	"github.com/Mozakar/gomigrator/contract"
 )
 
-func main() {}
-
 func Migrate(c contract.Client) {
 	args := os.Args[1:]
 	if len(args) > 0 && strings.ToLower(args[0]) == "gomigrator" {
