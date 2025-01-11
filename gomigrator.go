@@ -1,7 +1,6 @@
-package main
+package gomigrator
 
 import (
-	"database/sql"
 	"fmt"
 	"os"
 	"strings"
@@ -9,21 +8,6 @@ import (
 	"github.com/Mozakar/gomigrator/cmd"
 	"github.com/Mozakar/gomigrator/contract"
 )
-
-type PostgresDbConfig struct {
-	Host         string
-	Port         string
-	User         string
-	Passwd       string
-	DBName       string
-	SslMode      string
-	ExtraOptions string
-}
-type PostgresConnector struct {
-	db                 *sql.DB
-	MigrationFilesPath string
-	DbConfig           PostgresDbConfig
-}
 
 func main() {}
 
