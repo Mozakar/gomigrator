@@ -9,7 +9,7 @@ import (
 	"github.com/Mozakar/gomigrator/contract"
 )
 
-func Gomigrator(c contract.Client) {
+func Migrate(c contract.Client) {
 	args := os.Args[1:]
 	if len(args) > 0 && strings.ToLower(args[0]) == "gomigrator" {
 		if len(args) == 1 {
